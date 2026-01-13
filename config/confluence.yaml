@@ -1,0 +1,12 @@
+# Configurações do Confluence
+
+url: "https://laborit.atlassian.net/wiki"
+username: "diego.richalski@laborit.com.br"
+api_token: ""  # Configure via variável de ambiente CONFLUENCE_API_TOKEN
+space_key: "PEM"
+
+
+
+
+
+

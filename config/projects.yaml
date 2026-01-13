@@ -1,0 +1,39 @@
+# Configurações dos projetos ETL
+
+projects:
+  consultor_turbo:
+    name: "Consultor Turbo"
+    display_name: "Consultor Turbo"
+    config_path: "/home/burning_pixel_cwb/workstation/lake-turbo/scripts/glue/consultor-turbo/configurations"
+    output_dir: "output/consultor_turbo"
+    csv_dir_name: "csv_consultor_tables"
+    s3_comparison:
+      s3_path: "domains/consultor_turbo/s3_input"  # Caminho para arquivos CSV do S3
+      etl_path: "output/consultor_turbo/csv_consultor_tables"  # Caminho para CSVs do ETL
+      output_path: "output/consultor_turbo/resultados_comparacao"  # Onde salvar resultados
+      project_name: "consultor-turbo"
+
+  portal_turbo:
+    name: "Portal Turbo"
+    display_name: "Portal Turbo"
+    config_path: "/home/burning_pixel_cwb/workstation/lake-turbo/scripts/glue/portal-turbo/configurations"
+    output_dir: "output/portal_turbo"
+    csv_dir_name: "csv_portal_tables"
+    s3_comparison:
+      s3_path: "domains/portal_turbo/s3_input"  # Caminho para arquivos CSV do S3
+      etl_path: "output/portal_turbo/csv_portal_tables"  # Caminho para CSVs do ETL
+      output_path: "output/portal_turbo/resultados_comparacao"  # Onde salvar resultados
+      project_name: "portal-turbo"
+
+  chama:
+    name: "Chama"
+    display_name: "Chama"
+    config_path: "/home/burning_pixel_cwb/workstation/lake-turbo/scripts/glue/chama/configurations"
+    output_dir: "output/chama"
+    csv_dir_name: "csv_chama_tables"
+    s3_comparison:
+      s3_path: "domains/chama/s3_input"  # Caminho para arquivos CSV do S3
+      etl_path: "output/chama/csv_chama_tables"  # Caminho para CSVs do ETL
+      output_path: "output/chama/resultados_comparacao"  # Onde salvar resultados
+      project_name: "chama"
+
